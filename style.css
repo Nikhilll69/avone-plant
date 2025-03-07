@@ -14,12 +14,16 @@ body {
 }
 
 .container {
+  height: auto;
   font-family: "karla", sans-serif;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   max-width: 96%;
 }
+
+
+
 .top-bar {
   height: 6vh;
   background-color: #677e52;
@@ -240,7 +244,7 @@ body {
   text-align: center;
 }
 .tabs {
-    margin-top: 40px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,7 +266,7 @@ body {
 }
 
 .plants-description {
-    margin-top: 15px;
+  margin-top: 15px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 500px;
@@ -304,8 +308,8 @@ body {
 }
 
 .big-grids {
-    margin-top: 25px;
-  height: 1350px;
+  margin-top: 25px;
+
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -339,10 +343,13 @@ body {
 }
 
 .shipping {
-  margin-top: 50px;
-  display: flex;
 
+  margin-top: 50px;
+  padding-top: 50px; /* Add padding to ensure spacing */
+  display: flex;
   flex-direction: column;
+  clear: both; /* Ensure it clears any floated elements */
+
 }
 .ship-icons {
   display: flex;
@@ -379,7 +386,7 @@ body {
 /* Footer styling */
 
 footer {
-    margin-top: 50px;
+  margin-top: 50px;
   color: #fcfbf9;
   font-family: Arial, sans-serif; /* Change to your preferred font */
   background-image: url(/images/footerbg.png);
@@ -395,8 +402,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20;
-  padding:30px 20px 50px 20px;
-
+  padding: 30px 20px 50px 20px;
 }
 
 /* Individual column styling */
@@ -419,17 +425,16 @@ footer {
 
   list-style: none;
 }
-.links{
-    display: flex;
-    gap: 15px;
+.links {
+  display: flex;
+  gap: 15px;
 }
-.links li{
-    list-style: none;
+.links li {
+  list-style: none;
 }
-.links a{
-    color: #fcfbf9;
-    text-decoration: none;
-    
+.links a {
+  color: #fcfbf9;
+  text-decoration: none;
 }
 
 .footer-column p.f-head {
@@ -457,13 +462,13 @@ footer {
   flex-direction: column;
 }
 .footer-column a {
-    color: #fcfbf9; /* Set the desired color for the email link */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  .footer-column a:hover {
-    text-decoration: underline; /* Optional: Add underline on hover */
-  }
+  color: #fcfbf9; /* Set the desired color for the email link */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-column a:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
 
 .footer-column input[type="email"] {
   padding: 10px;
@@ -502,18 +507,18 @@ footer {
   }
 }
 
-.footer-bottom{
-    padding: 30px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px dotted #667e52;
+.footer-bottom {
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px dotted #667e52;
 }
-.footer-bottom p{
-    font-size: 14px;
-    font-weight: 700px;
+.footer-bottom p {
+  font-size: 14px;
+  font-weight: 700px;
 }
-.payment-icons{
-    display: flex;
-    gap: 5px;
+.payment-icons {
+  display: flex;
+  gap: 5px;
 }
